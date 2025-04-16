@@ -1,0 +1,33 @@
+/* Button styles */
+.action-btn-outlined {
+  height: 36px;
+  border: 1px solid var(--border-color);
+  background-color: transparent;
+  color: var(--text-primary);
+  font-weight: 500;
+  min-width: 100px;
+}
+
+.action-btn {
+  text-transform: none;
+  font-weight: 500;
+  letter-spacing: 0;
+  min-width: 60px;
+  color: var(--text-primary);
+  padding: 0;
+  height: 32px;
+  font-size: var(--font-size-base);
+}
+
+/* .view-all-btn {
+  text-transform: none;
+  font-weight: bold;
+  letter-spacing: 0;
+  margin-top: var(--spacing-sm);
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  padding: 0 var(--spacing-md);
+  height: 36px;
+  font-size: 14px;
+} */

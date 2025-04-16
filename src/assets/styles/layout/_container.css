@@ -1,0 +1,11 @@
+/* Layout containers */
+.content-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+  width: 100%;
+}
+
+.main-content {
+  background-color: var(--background-color);
+} 

@@ -1,0 +1,24 @@
+/* Table styles */
+.v-table,
+.v-table thead,
+.v-table thead tr {
+  background-color: transparent;
+}
+
+.v-table th {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  text-transform: none;
+  letter-spacing: 0;
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+  background: none;
+}
+
+.v-table td {
+  padding: var(--spacing-md);
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  border-bottom: 1px solid var(--border-color);
+}

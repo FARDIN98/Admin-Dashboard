@@ -1,0 +1,320 @@
+/* Import variables first */
+@import './utils/_variables.css';
+
+/* Import base styles */
+@import './base/_reset.css';
+
+/* Import layouts */
+@import './layout/_container.css';
+
+/* Import components */
+@import './components/_navbar.css';
+@import './components/_footer.css';
+@import './components/_buttons.css';
+@import './components/_cards.css';
+@import './components/_tables.css';
+@import './components/_forms.css';
+
+/* Import responsive styles last */
+@import './utils/_responsive.css';
+
+/* Global variables */
+:root {
+  --gradient-colors: linear-gradient(273.64deg, #35C3F3 11.27%, #8B9FE8 36.72%, #E681D8 61.72%, #FFA9A4 82.79%, #FED2CE 107.29%, #FED2CE 107.29%);
+  --admin-color: rgba(106, 106, 106, 1);
+  --disabled-color: rgba(106, 106, 106, 0.7);
+  --category-bg: rgba(209, 216, 247, 0.4);
+  --background-color: #FFFFFF;
+  --card-bg: #FFFFFF;
+  --text-primary: #000000;
+  --text-secondary: #6A6A6A;
+  --border-color: #E0E0E0;
+}
+
+/* Global styles */
+body {
+  font-family: 'Helvetica Neue';
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  min-height: 100vh;
+  color: var(--text-primary);
+}
+
+/* Layout containers */
+.content-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.main-content {
+  background-color: var(--background-color);
+}
+
+/* Navbar styles */
+.navbar {
+  height: 72px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0 !important;
+}
+
+.navbar-content {
+  height: 100%;
+  padding: 0;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icon {
+  margin-right: 8px;
+}
+
+/* Logo styles */
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+}
+
+.moviebox-text {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background: var(--gradient-colors);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 4px;
+}
+
+.admin-text {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: var(--admin-color);
+}
+
+/* Footer styles */
+.moviebox-text-small {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  background: var(--gradient-colors);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.admin-text-small {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--admin-color);
+}
+
+.footer-copyright {
+  color: rgba(106, 106, 106, 1);
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.v-footer {
+  justify-content: center;
+  height: 64px;
+}
+
+/* Navigation styles */
+.nav-links {
+  display: flex;
+  gap: 24px;
+  margin-left: 0;
+}
+
+.nav-link {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-transform: none;
+  min-width: 0;
+  padding: 0;
+}
+
+.nav-link.active {
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--gradient-colors);
+}
+
+.nav-link.disabled {
+  color: rgba(106, 106, 106, 1);
+  opacity: 1;
+}
+
+/* Overview section styles */
+.overview-title {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin: 0;
+}
+
+/* Chart and table styles */
+.chart-card,
+.table-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: none;
+}
+.table-card {
+  overflow: hidden;
+}
+
+/* Table specific styles */
+.v-table,
+.v-table thead,
+.v-table thead tr {
+  background-color: transparent;
+}
+
+.v-table th {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  text-transform: none;
+  letter-spacing: 0;
+  padding: var(--spacing-md);
+  border-bottom: 1px solid var(--border-color);
+  background: none;
+}
+
+.v-table td {
+  padding: var(--spacing-md);
+  color: var(--text-primary);
+  font-size: var(--font-size-base);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Search field styles */
+.search-field {
+  max-width: 240px;
+  border-radius: 8px;
+}
+
+.search-field .v-field__outline {
+  --v-field-border-width: 1px;
+  border-color: var(--border-color);
+}
+
+.search-field .v-field__input {
+  padding: 8px 12px;
+  min-height: 0;
+  font-size: 14px;
+}
+
+.search-field .v-field__prepend-inner {
+  padding-inline-start: 12px;
+}
+
+/* Button styles */
+.v-btn {
+  text-transform: none;
+  font-size: 14px;
+  letter-spacing: 0;
+}
+
+.action-btn-outlined {
+  height: 36px;
+  border: 1px solid var(--border-color);
+  background-color: transparent;
+  color: var(--text-primary);
+  font-weight: 500;
+  min-width: 100px;
+}
+
+.action-btn {
+  text-transform: none;
+  font-weight: 500;
+  letter-spacing: 0;
+  min-width: 60px;
+  color: #000;
+  padding: 0;
+  height: 32px;
+  font-size: 14px;
+}
+
+.view-all-btn {
+  text-transform: none;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  padding: 0 16px;
+  height: 36px;
+}
+
+/* Responsive styles */
+@media (max-width: 960px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .chart-card, .table-card {
+    margin-bottom: 16px;
+  }
+  
+  .search-field {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-actions {
+    display: none;
+  }
+  
+  .overview-title {
+    font-size: 20px;
+  }
+  
+  .search-field {
+    max-width: 140px;
+  }
+  
+  .v-table th, .v-table td {
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+  
+  .category-chip {
+    font-size: 10px;
+    padding: 0 8px;
+  }
+}

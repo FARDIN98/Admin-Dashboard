@@ -1,0 +1,38 @@
+/* Responsive styles */
+@media (max-width: 960px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .chart-card, .table-card {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .search-field {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar-actions {
+    display: none;
+  }
+  
+  .overview-title {
+    font-size: var(--font-size-large);
+  }
+  
+  .search-field {
+    max-width: 140px;
+  }
+  
+  .v-table th, .v-table td {
+    padding: var(--spacing-sm) var(--spacing-sm);
+    font-size: var(--font-size-small);
+  }
+  
+  .category-chip {
+    font-size: var(--font-size-small);
+    padding: 0 var(--spacing-sm);
+  }
+}

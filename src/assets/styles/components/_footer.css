@@ -1,0 +1,31 @@
+/* Footer styles */
+.v-footer {
+  justify-content: center;
+  height: var(--footer-height);
+}
+
+.moviebox-text-small {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: var(--font-size-large);
+  line-height: 100%;
+  background: var(--gradient-colors);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.admin-text-small {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: var(--font-size-large);
+  line-height: 100%;
+  color: var(--admin-color);
+}
+
+.footer-copyright {
+  color: var(--admin-color);
+  font-size: var(--font-size-medium);
+  font-weight: 300;
+  text-align: center;
+} 

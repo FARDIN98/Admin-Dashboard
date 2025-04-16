@@ -1,0 +1,33 @@
+:root {
+  /* Colors */
+  --gradient-colors: linear-gradient(273.64deg, #35C3F3 11.27%, #8B9FE8 36.72%, #E681D8 61.72%, #FFA9A4 82.79%, #FED2CE 107.29%, #FED2CE 107.29%);
+  --admin-color: rgba(106, 106, 106, 1);
+  --disabled-color: rgba(106, 106, 106, 0.7);
+  --category-bg: rgba(209, 216, 247, 0.4);
+  --background-color: #FFFFFF;
+  --card-bg: #FFFFFF;
+  --text-primary: #000000;
+  --text-secondary: #6A6A6A;
+  --border-color: #E0E0E0;
+
+  /* Typography */
+  --font-family: 'Helvetica Neue';
+  --font-size-small: 12px;
+  --font-size-base: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 18px;
+  --font-size-xlarge: 24px;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Layout */
+  --navbar-height: 72px;
+  --footer-height: 64px;
+  --container-max-width: 1440px;
+  --border-radius: 8px;
+} 

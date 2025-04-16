@@ -1,0 +1,16 @@
+/* Base reset styles */
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  min-height: 100vh;
+  color: var(--text-primary);
+}
+
+/* Reset default button styles */
+.v-btn {
+  text-transform: none;
+  font-size: var(--font-size-base);
+  letter-spacing: 0;
+}
