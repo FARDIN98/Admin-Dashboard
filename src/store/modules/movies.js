@@ -5,16 +5,16 @@ export default {
   state: () => ({
     // Movie premieres data
     upcomingMovies: [
-      { id: 1, name: 'Avengers Black Widow', category: ['ACTION', 'THRILLER'], watchlists: 389234, owner: 'Sony Entertainment', premierDate: '21th May, 2022', image: '/Assets/Avatars/avengers-black-widow.png' },
-      { id: 2, name: 'Moonlight', category: ['TRUE STORY'], watchlists: 5893, owner: 'A24 and Plan B Entertainment', premierDate: '15th August, 2022', image: '/Assets/Avatars/Moonlight.png', more: '+2 more' },
-      { id: 3, name: 'Grimsby', category: ['COMEDY', 'CRIME'], watchlists: 200901, owner: 'Sony Entertainment', premierDate: '5th October, 2022', image: '/Assets/Avatars/Grimsby.png' },
-      { id: 4, name: 'Spider Man - No way home', category: ['ACTION', 'THRILLER'], watchlists: 509262, owner: 'Sony Entertainment', premierDate: '25th December, 2022', image: '/Assets/Avatars/spiderman.png' }
+      { id: 1, name: 'Avengers Black Widow', category: ['ACTION', 'THRILLER'], watchlists: 389234, owner: 'Sony Entertainment', premierDate: '21th May, 2022', image: 'avengers-black-widow.png' },
+      { id: 2, name: 'Moonlight', category: ['TRUE STORY'], watchlists: 5893, owner: 'A24 and Plan B Entertainment', premierDate: '15th August, 2022', image: 'Moonlight.png', more: '+2 more' },
+      { id: 3, name: 'Grimsby', category: ['COMEDY', 'CRIME'], watchlists: 200901, owner: 'Sony Entertainment', premierDate: '5th October, 2022', image: 'Grimsby.png' },
+      { id: 4, name: 'Spider Man - No way home', category: ['ACTION', 'THRILLER'], watchlists: 509262, owner: 'Sony Entertainment', premierDate: '25th December, 2022', image: 'spiderman.png' }
     ],
     // Trending movies data
     trendingMovies: [
-      { id: 1, name: 'Moonlight', category: ['TRUE STORY'], watchlists: 5893, streams: '24,512,232', releaseDate: '4th July, 2012', image: '/Assets/Avatars/Moonlight.png', more: '+2 more' },
-      { id: 2, name: 'Grimsby', category: ['COMEDY', 'CRIME'], watchlists: 200901, streams: '4,164,476', releaseDate: '21th May, 2003', image: '/Assets/Avatars/Grimsby.png' },
-      { id: 3, name: 'Spider Man - Far from Home', category: ['ACTION', 'THRILLER'], watchlists: 389234, streams: '13,043,145', releaseDate: '14th June, 2012', image: '/Assets/Avatars/spiderman.png' }
+      { id: 1, name: 'Moonlight', category: ['TRUE STORY'], watchlists: 5893, streams: '24,512,232', releaseDate: '4th July, 2012', image: 'Moonlight.png', more: '+2 more' },
+      { id: 2, name: 'Grimsby', category: ['COMEDY', 'CRIME'], watchlists: 200901, streams: '4,164,476', releaseDate: '21th May, 2003', image: 'Grimsby.png' },
+      { id: 3, name: 'Spider Man - Far from Home', category: ['ACTION', 'THRILLER'], watchlists: 389234, streams: '13,043,145', releaseDate: '14th June, 2012', image: 'spiderman.png' }
     ]
   }),
   // Getters provide access to state data with potential transformations

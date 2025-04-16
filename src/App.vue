@@ -58,7 +58,7 @@ const watchTimeData = computed(() => store.getters['charts/getWatchTimeData'])
               <v-icon>mdi-bell</v-icon>
             </v-btn>
             <v-avatar size="36" class="ml-3">
-              <v-img src="/Assets/Avatars/profile.png"></v-img>
+              <v-img src="/profile.png"></v-img>
             </v-avatar>
           </div>
         </div>
