@@ -53,7 +53,8 @@ const props = defineProps({
         <thead>
           <tr>
             <th class="text-left">
-              Name <v-icon size="small">mdi-arrow-down</v-icon>
+              <v-checkbox density="compact" hide-details class="mr-2" style="display:inline-block;vertical-align:middle" />
+              <span style="display:inline-block;vertical-align:middle">Name <v-icon size="small">mdi-arrow-down</v-icon></span>
             </th>
             <th class="text-left">Category</th>
             <th class="text-left watchlists-col">Watchlists</th>
